@@ -5,7 +5,7 @@ using VRC.Udon;
 
 public class TeleportPlayer : UdonSharpBehaviour
 {
-    [SerializeField] Transform targetPosition;
+    [SerializeField] private Transform targetPosition;
 
     public void OnPlayerTriggerEnter()
     {
