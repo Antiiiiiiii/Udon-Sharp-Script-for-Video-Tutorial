@@ -30,6 +30,10 @@ public class ResetObject : UdonSharpBehaviour
             controlledObjects[i].transform.position = initialPositions[i];
             controlledObjects[i].transform.rotation = initialRotations[i];
         }
+    }    
+    
+    public override void Interact()
+    {
+        Reset();
     }
-
 }
