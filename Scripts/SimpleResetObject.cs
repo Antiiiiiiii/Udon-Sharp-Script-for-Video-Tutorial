@@ -22,5 +22,10 @@ public class SimpleResetObject : UdonSharpBehaviour
         Networking.SetOwner(Networking.LocalPlayer, target);
         target.transform.position = initialPosition;
         target.transform.rotation = initialRotation;
+    }    
+    
+    public override void Interact()
+    {
+        Reset();
     }
 }
